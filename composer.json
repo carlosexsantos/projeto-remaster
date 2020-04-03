@@ -1,0 +1,31 @@
+{
+	"name": "carlosexsantos/projeto-remaster",
+	"description": "Programa para gerenciamento de condomínio",
+	"minimum-stability": "beta",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Carlos Edwardo Xavier",
+			"email": "carlos_exs@hotmail.com",
+			"role": "Developer",
+			"homepage": "https://e-softapps.com.br/condapp"
+		}
+	],
+	"config": {
+		"vendor-dir": "vendor"
+	},
+	"autoload":{
+		"psr-4": {
+			"Source\\": "Source/"
+		},
+		"files": [
+			"Source/Config.php"
+		]
+	},
+	"require": {
+		"ext-pdo": "*",
+		"coffeecode/datalayer": "1.1.*",
+		"coffeecode/router": "1.0.*",
+		"league/plates": "v4.0.0-alpha"
+	}
+}
